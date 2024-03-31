@@ -1,0 +1,16 @@
+print("### Sistema de perguntas automatizadas ###")
+print("### Responda as perguntas considerando 1 para '' sim '' e 0 para '' não '' ###")
+pergunta1 = int(input("Telefonou para a vítima?"))
+pergunta2 = int(input("Esteve no local do crime?"))
+pergunta3 = int(input("Mora perto da vítima?"))
+pergunta4 = int(input("Devia para a vítima?"))
+pergunta5 = int(input("Já trabalhou com a vítima?"))
+
+if pergunta1 + pergunta2 + pergunta3 + pergunta4 + pergunta5 == 5:
+    print("Você é o assassino!")
+elif pergunta1 + pergunta2 + pergunta3 + pergunta4 + pergunta5 >= 3:
+    print("Você é cúmplice")
+elif pergunta1 + pergunta2 + pergunta3 + pergunta4 + pergunta5 == 2:
+    print("Você é suspeito!")
+else:
+    print("Você é inocente!")
