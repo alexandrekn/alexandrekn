@@ -1,0 +1,15 @@
+print("Digite V na opção para acessar nosso menu")
+opcao = str(input("Digite a opção desejada: ")).upper()
+while opcao != "V":
+    opcao = str(input("Opção Inválida digite novamente: "))
+while opcao == "V":
+    print("Menu de ferramentas:  \nA = Calculador de Aniversário ( Calcula quanto tempo falta para seu aniversário: \nB - Digite sua conta bancária com 4 digitos Ex: 8720: \n)")
+
+    if opcao == "B":
+        M = int(input("Primeiro digito da conta bancária entre 0 e 9: "))
+        C = int(input("Segundo digito da conta bancária entre 0 e 9: "))
+        D = int(input("Terceiro digito da conta bancária entre 0 e 9: "))
+        U = int(input("Quarto digito da conta bancária entre 0 e 9: "))
+        R = (M * U) + (C*D)
+        V = R % 7
+        print("Resultado = ", V)
